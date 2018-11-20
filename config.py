@@ -7,6 +7,9 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'this-really-needs-to-be-changed'
+    EMOJIS_FOLDER = "./emojies/"
+    OUTPUT_IMAGE_SIZE = 256
+    OUTPUT_IMAGE_FOLDER = "./rendered/"
 
 
 class ProductionConfig(Config):
