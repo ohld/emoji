@@ -3,5 +3,6 @@ gunicorn
 numpy
 requests
 Pillow
-redis
-rq
+# redis
+# rq
+python-telegram-bot
