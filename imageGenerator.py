@@ -60,7 +60,14 @@ def get_random_filename():
 
 def generate_random_emoji_cover(filepath=None, output_folder=OUTPUT_FOLDER):
     emoji_pic = get_emojie()
-    background = get_gradient(innerColor=get_most_freq_color(emoji_pic))
+    background = get_gradient(
+        innerColor=get_most_freq_color(emoji_pic),
+        outerColor=(
+            random.randint(0, 255),
+            random.randint(0, 255),
+            random.randint(0, 255)
+        )
+    )
     final = insert_image(background, emoji_pic)
     if filepath is not None:
         final.save(filepath)
