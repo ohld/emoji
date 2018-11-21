@@ -15,6 +15,10 @@
       .container {
         max-width: 1000px;
       }
+
+      .small-container {
+        max-width: 500px;
+      }
     </style>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -51,15 +55,31 @@
   <body>
     <div class="vertical-center">
         <div class="container text-center">
-        <h1>I'll give you square image with emoji</h1>
-        <br>
-        <form role="form" method='POST' action='/'>
-            <button type="submit" class="btn btn-default text-center">Generate</button>
-        </form>
+            <h1>I'll give you square image with emoji</h1>
+            <br>
+            <form role="form" method='POST' action='/'>
+                <button type="submit" class="btn btn-default btn-lg text-center">Generate</button>
+            </form>
+            <br>
+            <h3>This can be used as</h3>
+            <div class="container small-container text-center">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">Cover image for any social network chats</li>
+                    <li class="list-group-item list-group-item-warning">Avatar if you don't want to use your real photo</li>
+                    <li class="list-group-item list-group-item-danger">Random square image</li>
+                </ul>
+            </div>
+            <a href="https://t.me/emojicover">More images</a>
         </div>
     </div>
     <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
+
+  <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">
+                <a href="https://okhlopkov.com"><i>okhlopkov</i></a>
+        </div>
+  </footer>
 
 </html>
