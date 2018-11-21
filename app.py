@@ -1,8 +1,14 @@
 import os
 import requests
+
+from rq import Queue
+from rq.job import Job
+from worker import conn
 from flask import Flask, render_template, request, send_file
 
 from imageGenerator import generate_random_emoji_cover
+
+q = Queue(connection=conn)
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])

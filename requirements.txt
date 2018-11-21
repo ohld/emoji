@@ -3,3 +3,5 @@ gunicorn
 numpy
 requests
 Pillow
+redis
+rq
