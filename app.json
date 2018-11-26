@@ -1,0 +1,7 @@
+{
+  "name": "Emoji Cover",
+  "description": "Generates square images with emoji for chats and avatars",
+  "repository": "https://github.com/ohld/emoji",
+  "logo": "https://user-images.githubusercontent.com/5613295/49039369-9af46680-f1d0-11e8-8cbe-ae04ff4ce069.png",
+  "keywords": ["emoji", "square", "images", "flask", "okhlopkov"]
+}
