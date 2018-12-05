@@ -51,6 +51,7 @@ def get_most_freq_color(img, reverse=True):
 
 def insert_image(background, img):
     b_w, b_h = background.size
+    img = img.resize((b_w // 2, b_h // 2), Image.ANTIALIAS)
     i_w, i_h = img.size
     background.paste(img, ((b_w - i_w) // 2, (b_h - i_h) // 2), img)
     return background
